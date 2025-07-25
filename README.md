@@ -26,6 +26,7 @@ hello-k8s/
 ├── deployment.yaml
 └── service.yaml
 
+## How to run docker and kubernetes
 
 1. Run App Locally with Docker
 
