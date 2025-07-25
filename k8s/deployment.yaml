@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
     name: hello-deployment
 spec:
-      replicas: 2
+      replicas: 3
       selector:
         matchLabels:
           app: hello
@@ -11,6 +11,7 @@ spec:
         metadata:
           labels:
             app: hello
+            version: "v2"
         spec:
           containers:
           - name: hello-container

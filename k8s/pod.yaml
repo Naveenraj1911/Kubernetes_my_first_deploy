@@ -1,0 +1,15 @@
+# k8s/pod.yaml
+ apiVersion: v1
+ kind: Pod
+ metadata:
+   name: hello-pod
+   labels:
+       app: hello
+ spec:
+   containers:
+   - name: hello-container
+     image: hello-k8s:latest
+     imagePullPolicy: Never
+     ports:
+     - containerPort: 5000
+                             
